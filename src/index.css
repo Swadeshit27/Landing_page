@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", Inter, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  width: 100vw !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+}
+
+@layer base {
+  .btn {
+    @apply w-36 py-3 rounded-full bg-blue-500 text-white;
+  }
+  .header {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-950 text-center mb-3 sm:mb-6;
+  }
+  .subpara {
+    @apply text-center uppercase text-blue-500 mb-3;
+  }
+  .para{
+    @apply sm:text-lg text-gray-600 text-center
+  }
+}
